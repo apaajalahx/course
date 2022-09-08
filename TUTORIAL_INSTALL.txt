@@ -1,0 +1,24 @@
+
+
+Clone git ini dengan command
+git clone git@github.com:apaajalahx/course.git
+
+setelah itu masuk ke dalam folder course dan install vendor yang di butuhkan dengan composer
+
+cd course
+composer install
+
+setelah selesai rename .env.example menjadi .env dan setting database nya, database menggunakan mysql
+
+setelah selesai jalankan generate key
+
+php artisan key:generate
+
+setelah itu jalankan migration dan seeder
+
+php artisan migrate:fresh
+php artisan db:seed
+
+setelah selesai semua tinggal kita jalankan aplikasi
+
+php artisan serve
